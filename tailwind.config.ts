@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        nine: "#6d6d6d",
+        accentBlue: "#03e3a6",
+        develop: "#e7fcf6",
+        design: "#6a6a6a",
       },
     },
   },

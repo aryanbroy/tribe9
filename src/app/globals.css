@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: poppins;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,15 +14,52 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #141414;
     --foreground: #ededed;
+    /* background-color: #141414; */
   }
+}
+
+/* #mainPage {
+  background-image: url("/images/heroBg.png");
+  background-repeat: no-repeat;
+} */
+
+#tree {
+  background-image: url("/images/tree.png");
+  background-repeat: no-repeat;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins;
+  background-image: url("/images/heroBg.png");
+  background-repeat: no-repeat;
+}
+
+#design {
+  background: linear-gradient(
+    to bottom,
+    #6a6a6a 45%,
+    #7f7f7f 64%,
+    #8e8e8e 80%,
+    #e7fcf6 98%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+#deliver {
+  background: linear-gradient(
+    to bottom,
+    #e7fcf6 2%,
+    #8e8e8e 27%,
+    #7f7f7f 43%,
+    #6a6a6a 62%
+  );
+  color: transparent;
+  background-clip: text;
 }
 
 @layer utilities {
